@@ -1,0 +1,13 @@
+# LTspice temporary files
+*.raw
+*.log
+*.op.raw
+*.fft
+*.net
+*.log.txt
+
+# OS & Python temp files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
