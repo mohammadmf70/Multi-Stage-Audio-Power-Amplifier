@@ -29,7 +29,7 @@ All simulations were conducted in LTspice using standard discrete component mode
 | :--- | :--- | :--- | :--- |
 | **Closed-Loop Gain ($A_{v,\text{closed}}$)** | $18 \le A_v \le 22$ ($26\,\text{dB}$) | **$19.96$ ($26.0\,\text{dB}$)** | Pass |
 | **Feedback Resistors ($R_f, R_g$)** | $10\,\text{k}\Omega \le R_f, R_g \le 200\,\text{k}\Omega$ | **$R_f = 190\,\text{k}\Omega, R_g = 10\,\text{k}\Omega$** | Pass |
-| **Unclipped Output Swing ($V_{\text{out,pp}}$)**| $\ge 16\,\text{V}_{\text{pp}}$ ($8\,\text{V}_{\text{peak}}$) | **$16.8\,\text{V}_{\text{pp}}$ ($8.4\,\text{V}_{\text{peak}}$)** | Pass |
+| **Unclipped Output Swing ($V_{\text{out,pp}}$)**| $\ge 16\text{ V}_{\text{pp}}$ ($8\text{ V}_{\text{peak}}$) | **$16.8\text{ V}_{\text{pp}}$ ($8.4\text{ V}_{\text{peak}}$)** | Pass |
 | **Output Class-AB Efficiency ($\eta_{\text{out}}$)**| $> 60\%$ at $16\,\text{V}_{\text{pp}}$ swing | **$65.56\%$** (Bonus Swing: **$70.5\%$**) | Pass |
 | **Total Power Consumption ($P_{\text{total}}$)**| $\le 140\,\text{mW}$ ($V_{\text{in}} = 50\,\text{mV}_{\text{peak}}$) | **$141.85\,\text{mW}$** | Pass |
 | **THD (Normal Environment)** | $< 0.08\%$ ($1\,\text{kHz}, 50\,\text{mV}_{\text{in}}$) | **$0.0141\%$** | Pass |
