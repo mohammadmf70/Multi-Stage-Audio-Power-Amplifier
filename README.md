@@ -1,7 +1,7 @@
 # Multi-Stage Discrete Audio Power Amplifier with Global Negative Feedback
 
 > **Course:** Electronics II | **Department of Electrical Engineering, Sharif University of Technology**  
-> **Author:** Mohammadmehdi Fotouhi
+> **Author:** Mohammadmehdi Fotouhi  
 > **Tools:** LTspice , Python (`soundfile`, `scipy`, `matplotlib`)
 
 ---
