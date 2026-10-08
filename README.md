@@ -71,6 +71,7 @@ $$\text{PSRR} = 20 \log_{10} \left( \frac{V_{\text{ripple}}}{\Delta V_{\text{out
 ```text
 ├── schematics/
 │   ├── Ph2_403102322.asc              # Main complete LTspice circuit file
+│   ├── Ph1_403102322.asc              # Main complete LTspice circuit file
 │   ├── THD_Noise_Test.asc              # THD simulation with thermal noise source
 │   └── PSRR_Sawtooth_Test.asc          # PSRR test with 10mV sawtooth power supply
 ├── audio_test/
@@ -79,10 +80,11 @@ $$\text{PSRR} = 20 \log_{10} \left( \frac{V_{\text{ripple}}}{\Delta V_{\text{out
 │   └── output.wav                      # Amplified output WAV signal
 ├── docs/
 │   ├── Elec2_Report_Phase2.pdf         # Final comprehensive Phase II technical report
+│   ├── Elec2_Report_Phase1.pdf         # Final comprehensive Phase II technical report
 │   └── diagrams/                       # Schematic & waveform plots (PNG)
-│       ├── full_schematic.png
+│       ├── full_schematic_Ph1.png
+│       ├── full_schematic_Ph2.png
 │       ├── transient_swing.png
-│       ├── thd_spectrum.png
 │       └── audio_waveform.png
 ├── cost_analysis/
 │   └── cost_calculator.py              # Automated BOM cost evaluation script
