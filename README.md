@@ -74,7 +74,7 @@ All simulations were conducted in LTspice using standard discrete component mode
 │   └── output.wav                      # Amplified output WAV signal
 ├── docs/
 │   ├── Elec2_Report_Phase2.pdf         # Final comprehensive Phase II technical report
-│   ├── Elec2_Report_Phase1.pdf         # Final comprehensive Phase II technical report
+│   ├── Elec2_Report_Phase1.pdf         # Final comprehensive Phase I technical report
 │   └── diagrams/                       # Schematic & waveform plots (PNG)
 │       ├── full_schematic_Ph1.png
 │       ├── full_schematic_Ph2.png
