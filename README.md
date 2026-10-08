@@ -7,7 +7,7 @@
 ---
 
 ## 📌 Executive Summary
-This repository contains the complete theoretical derivation, LTspice circuit simulation, and performance analysis of a high-efficiency multi-stage discrete audio power amplifier driving a low-impedance $50\,\Omega$ load.
+This repository contains the complete theoretical derivation, LTspice circuit simulation, and performance analysis of a high-efficiency multi-stage discrete audio power amplifier driving a low-impedance $50\,\Omega$ load.  
 
 The amplifier integrates a MOS differential input pair, a high-gain voltage amplification stage (VAS), a Push-Pull Class-AB power output stage with threshold diode biasing, and a series-shunt global negative feedback network. The design satisfies all rigorous dynamic range, power efficiency, total harmonic distortion (THD), and power supply rejection ratio (PSRR) specifications.
 
