@@ -42,29 +42,23 @@ All simulations were conducted in LTspice using standard discrete component mode
 
 ---
 
-## 🔬 Theoretical Derivations & Engineering Highlights
+<details>
+<summary><b>🔬 Click to expand Theoretical Derivations & Analytical Formulas</b></summary>
+
+<br>
 
 ### 1. DC Biasing Analysis
-- Reference current established by BJT current mirror network: $I_{\text{ref}} = 1.55\,\text{mA}$.
-- Differential input stage ($M_5, M_6$) biased at $I_{D5} = I_{D6} \approx 0.79\,\text{mA}$.
-- Output stage BJTs ($Q_9, Q_{12}$) biased at $I_{C9} \approx 1.98\,\text{mA}$ and $I_{C12} \approx 1.79\,\text{mA}$ for Class-AB conduction.
-- DC output offset minimized to $9.09\,\text{mV}$ using a symmetry resistor network ($R_7 = 9.5\,\text{k}\Omega$).
+- **Reference Bias:** BJT current mirror establishes $I_{\text{ref}} = 1.55\,\text{mA}$.
+- **Input & Output Biasing:** Differential MOS pair biased at $I_{D5,6} \approx 0.79\,\text{mA}$; Class-AB power stage biased at $I_{C9} \approx 1.98\,\text{mA}$ and $I_{C12} \approx 1.79\,\text{mA}$.
+- **Offset Minimization:** Symmetry resistor $R_7 = 9.5\,\text{k}\Omega$ restricts DC output offset to $9.09\,\text{mV}$.
 
-### 2. Harmonic Distortion Reduction (THD)
-THD was computed using 100-harmonic Fourier spectrum analysis (`.FOUR 1khz 100 V(out)`):
-$$\text{THD} = \frac{\sqrt{\sum_{n=2}^{100} V_n^2}}{V_1} \times 100\%$$
-- **Clean Rail:** $\text{THD} = 0.0141\%$ due to loop gain linearization.
-- **Noise Environment:** Series noise injection in bias current branches yielded $\text{THD} = 0.0206\%$.
+### 2. Analytical Formulations
+- **Total Harmonic Distortion (THD):**
+  $$\text{THD} = \frac{\sqrt{\sum_{n=2}^{100} V_n^2}}{V_1} \times 100\%$$
+- **Power Supply Rejection Ratio (PSRR):**
+  $$\text{PSRR} = 20 \log_{10} \left( \frac{V_{\text{ripple}}}{\Delta V_{\text{out}}} \right) = 20 \log_{10} \left( \frac{10\,\text{mV}}{3.17\,\mu\text{V}} \right) = 69.98\,\text{dB}$$
 
-### 3. Power Supply Rejection Ratio (PSRR)
-Simulated by superimposing a $10\,\text{mV}_{\text{p-p}}$ sawtooth ripple on $V_{CC}$ and $V_{EE}$ rails:
-$$\text{PSRR} = 20 \log_{10} \left( \frac{V_{\text{ripple}}}{\Delta V_{\text{out}}} \right) = 20 \log_{10} \left( \frac{10\,\text{mV}}{3.17\,\mu\text{V}} \right) = 69.98\,\text{dB}$$
-
-### 4. Real Audio Signal Evaluation
-- Processed a mono audio recording sampled at $44.1\,\text{kHz}$ (16-bit PCM) using Python (`audio_prep.py`).
-- Transient analysis confirmed clean audio reproduction across $50\,\Omega$ load without clipping or saturation.
-
----
+</details>
 
 ## 📂 Repository Structure
 
